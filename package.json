@@ -1,0 +1,18 @@
+{
+  "name": "traffic-manager-puppeteer",
+  "version": "1.0.0",
+  "description": "Headless Chrome traffic generator with real GA/Jetpack tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.0",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "mysql2": "^3.6.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
