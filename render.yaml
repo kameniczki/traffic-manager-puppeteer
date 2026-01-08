@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: traffic-manager-puppeteer
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_BASE_URL
+        value: https://search-eu.com/api/traffic-api.php
+      - key: PROXY_LIST
+        sync: false
+        # Comma-separated list of proxies: ip:port,ip:port,ip:port
+        # Will be added via Render Dashboard
